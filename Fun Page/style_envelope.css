@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: url("assets/bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Opening Card */
+#cardOpening {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px dotted rgb(96, 86, 238);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#cardOpening h2 {
+  color: #6478b8;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#cardOpening h3 {
+  color: #6478b8;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+#cardOpening p {
+  color: #333;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+#cardOpening button {
+  background: rgb(193, 192, 255);
+  color: white;
+}
+
+/* Cards umum */
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px dashed rgb(73, 103, 193);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Kotak surat panjang */
+#cardLetter {
+  max-width: 480px;   /* lebih ramping */
+  max-height: 70vh;   /* biar ga terlalu tinggi */
+  overflow-y: auto;   /* teks bisa discroll */
+  text-align: center; /* teks ditengah */
+  line-height: 1.6;   /* spasi nyaman */
+  padding-right: 15px; /* kasih ruang biar ga nempel scrollbar */
+  margin: 0 auto;    /* pastikan kotak suratnya di tengah halaman */
+}
+
+.card.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+img {
+  max-width: 400px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+h2, h3, p {
+  color: #6470f4;
+  margin-bottom: 15px;
+}
+
+.btns {
+  margin-top: 15px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.open {
+  background: rgb(80, 98, 255);
+  color: white;
+}
+
+.nopen {
+  background: #55e0d4;
+  color: white;
+}
+
+.again, .restart {
+  background: rgb(85, 100, 216);
+  color: white;
+}
+
+/* Tombol Musik */
+#musicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* geser ke pojok kanan */
+  background: rgb(80, 98, 255);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  transition: transform 0.2s, background 0.3s;
+}
+
+#musicBtn:hover {
+  transform: scale(1.15) rotate(10deg);
+  background: rgb(60, 80, 220);
+}

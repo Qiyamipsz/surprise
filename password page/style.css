@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url("assets/bg.png") no-repeat center/cover;
+}
+
+/* ===== Container ===== */
+.container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 360px;
+  position: relative; /* penting untuk stiker */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #1D4E89;
+}
+
+/* ===== Input ===== */
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#passwordInput {
+  width: 80%;
+  font-size: 22px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #5DADEC;
+  letter-spacing: 6px;
+  background: #f0f8ff;
+  outline: none;
+}
+
+/* ===== Keypad ===== */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 15px;
+}
+
+.keypad button {
+  font-size: 20px;
+  padding: 18px;
+  border: none;
+  border-radius: 50px;
+  background: #5DADEC;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+}
+
+.keypad button:active {
+  background: #1D4E89;
+  transform: scale(0.95);
+}
+
+#message {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+/* ===== Sticker ===== */
+.sticker {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+.sticker-top-right { top: -40px; right: -10px; }
+.sticker-right { right: -60px; top: 65%; transform: translateY(-50%); }
+.sticker-bottom-left { bottom: -30px; left: -20px; }
+.sticker-top-left { top: 110px; left: -60px; }
+
+
+  /* ===== Hilangkan background putih di gambar/gif transparan ===== */
+.sticker {
+  background: transparent;        /* pastikan nggak ada background */
+  mix-blend-mode: normal;         /* default */
+}
+
+.sticker.no-bg {
+  mix-blend-mode: multiply;       /* trik kalau masih ada putih */
+  filter: brightness(1) contrast(1.4);
+}
+
+/* ===== Responsive (HP) ===== */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #passwordInput {
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 4px;
+  }
+
+  .keypad button {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 40px;
+  }
+
+  .sticker {
+    width: 65px;
+    height: 65px;
+  }
+
+  .sticker-top-right { top: -20px; right: -5px; }
+  .sticker-right { right: -35px; top: 60%; }
+  .sticker-bottom-left { bottom: -20px; left: -10px; }
+  .sticker-top-left { top: 90px; left: -30px; }
+}
