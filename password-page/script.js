@@ -15,7 +15,7 @@ function clearInput() {
 function checkPassword() {
   const correctPassword = "1009"; // ganti sesuai tanggal lahir
   if (input === correctPassword) {
-    window.location.href = "../Fun-Page/envelope1.html"; 
+    window.location.href = "../fun-page/envelope1.html"; 
   } else {
     document.getElementById("message").innerText = "Passwordnya salah sayang!";
     input = "";
