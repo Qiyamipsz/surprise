@@ -132,8 +132,8 @@ h2 {
   }
 
   .sticker {
-    width: 65px;
-    height: 65px;
+    max-width: 40px;
+    right: -10px;
   }
 
   .sticker-top-right { top: -20px; right: -5px; }
