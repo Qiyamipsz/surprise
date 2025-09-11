@@ -12,7 +12,7 @@ body {
 .container {
   background: #ffffff;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
   text-align: center;
   width: 100%;
@@ -102,9 +102,10 @@ h2 {
 }
 
 /* ===== Responsive (HP) ===== */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .container {
-    max-width: 320px;   /* biar lebih proporsional */
+    width: 95%;
+    max-width: 95vw;   /* biar lebih proporsional */
     padding: 30px;
   }
 
