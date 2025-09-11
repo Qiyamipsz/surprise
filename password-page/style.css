@@ -16,9 +16,9 @@ body {
 /* ===== Container ===== */
 .container {
   background: #ffffff;
-  padding: 5px;
+  padding: 15px;
   margin: auto;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
   text-align: center;
   width: 100%;
