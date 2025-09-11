@@ -25,13 +25,13 @@ body {
 
 #cardOpening h2 {
   color: #6478b8;
-  font-size: 42px;
-  margin-bottom: 30px;
+  font-size: 52px;
+  margin-bottom: 40px;
 }
 
 #cardOpening h3 {
   color: #6478b8;
-  font-size: 36px;
+  font-size: 46px;
   margin-bottom: 30px;
 }
 
@@ -91,7 +91,7 @@ img {
 
 h2, h3, p {
   color: #6470f4;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family:"Poppins" ;
 }
 
@@ -102,10 +102,10 @@ h2, h3, p {
 button {
   border: none;
   padding: 15px 28px;
-  margin: 8px;
-  border-radius: 25px;
+  margin: 10px;
+  border-radius: 28px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
