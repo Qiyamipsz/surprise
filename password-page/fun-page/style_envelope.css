@@ -15,9 +15,9 @@ body {
   background: rgba(255, 255, 255, 0.9);
   border: 2px dotted rgb(96, 86, 238);
   border-radius: 20px;
-  padding: 40px;
+  padding: 25px;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   animation: fadeIn 0.6s ease-in-out;
 }
 
@@ -88,6 +88,7 @@ img {
 h2, h3, p {
   color: #6470f4;
   margin-bottom: 15px;
+  font-family:"Poppins" ;
 }
 
 .btns {
