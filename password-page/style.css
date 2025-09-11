@@ -92,7 +92,7 @@ h2 {
 
 .sticker-top-right { top: -40px; right: 0px; }
 .sticker-right { right: -70px; top: 65%; transform: translateY(-50%); }
-.sticker-bottom-left { bottom: -45px; left: -30px; }
+.sticker-bottom-left { bottom: -4px; left: -30px; }
 .sticker-top-left { top: 105px; left: -50px; }
 
 
@@ -108,9 +108,7 @@ h2 {
 }
 
 .with-shadow {
-  width: 250px; /* opsional */
-  border-radius: 10px; /* kalau mau pojok agak melengkung */
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.3); 
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.6));
 }
 
 /* ===== Responsive (HP) ===== */
