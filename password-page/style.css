@@ -23,7 +23,7 @@ body {
   text-align: center;
   width: 100%;
   max-width: 360px;
-  position: fixed; /* penting untuk stiker */
+  position: absolute; /* penting untuk stiker */
 }
 
 h2 {
