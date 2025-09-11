@@ -52,7 +52,7 @@ body {
   padding: 15px;
   width: 100%;
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
   display: none;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   animation: fadeIn 0.5s ease-in-out;
@@ -60,11 +60,13 @@ body {
 
 /* Kotak surat panjang */
 #cardLetter {
-  max-width: 600px;   /* lebih ramping */
+  max-width: 700px;   /* lebih ramping */
   text-align: center; /* teks ditengah */
   line-height: 1.8;   /* spasi nyaman */
-  padding:15px;/*sih ruang biar ga nempel scrollbar */
-  margin: 0 auto;    /* pastikan kotak suratnya di tengah halaman */
+  padding: 15px; /*sih ruang biar ga nempel scrollbar */
+  margin: 0 auto;
+  height: 70vh;    /* pastikan kotak suratnya di tengah halaman */
+  overflow-y: auto;
 }
 
 .card.active {
