@@ -8,7 +8,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  min-height: 100vh;       /* lebih aman di mobile daripada height */
+  min-height: 50vh;       /* lebih aman di mobile daripada height */
   box-sizing: border-box;  /* hitung padding ke dalam */
   overflow-x: hidden;      /* cegah geser ke samping */
 }
