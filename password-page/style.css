@@ -1,11 +1,14 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
+  background: url("assets/bg.png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: url("assets/bg.png") no-repeat center/cover;
+  min-height: 100vh;       /* lebih aman di mobile daripada height */
+  box-sizing: border-box;  /* hitung padding ke dalam */
+  overflow-x: hidden;      /* cegah geser ke samping */
 }
 
 /* ===== Container ===== */
