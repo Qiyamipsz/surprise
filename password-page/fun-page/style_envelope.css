@@ -69,7 +69,7 @@ body {
   overflow-y: auto;   /* teks bisa discroll */
   text-align: center; /* teks ditengah */
   line-height: 1.8;   /* spasi nyaman */
-  padding-right: 15px; /* kasih ruang biar ga nempel scrollbar */
+  padding-right:0 15px;/*sih ruang biar ga nempel scrollbar */
   margin: 0 auto;    /* pastikan kotak suratnya di tengah halaman */
 }
 
