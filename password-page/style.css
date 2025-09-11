@@ -7,6 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   min-height: 100vh;       /* lebih aman di mobile daripada height */
   box-sizing: border-box;  /* hitung padding ke dalam */
   overflow-x: hidden;      /* cegah geser ke samping */
@@ -15,13 +16,13 @@ body {
 /* ===== Container ===== */
 .container {
   background: #ffffff;
-  padding: 0px;
+  padding: 20px;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 12px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
   text-align: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 360px;
   position: relative; /* penting untuk stiker */
 }
 
