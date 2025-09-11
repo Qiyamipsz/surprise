@@ -23,7 +23,7 @@ body {
   text-align: center;
   width: 100%;
   max-width: 360px;
-  position: absolute; /* penting untuk stiker */
+  position: relative; /* penting untuk stiker */
 }
 
 h2 {
@@ -91,9 +91,9 @@ h2 {
 }
 
 .sticker-top-right { top: -40px; right: 0px; }
-.sticker-right { right: -40px; top: 65%; transform: translateY(-50%); }
+.sticker-right { right: -15px; top: 65%; transform: translateY(-50%); }
 .sticker-bottom-left { bottom: -30px; left: -25px; }
-.sticker-top-left { top: 110px; left: -10px; }
+.sticker-top-left { top: 110px; left: -15px; }
 
 
   /* ===== Hilangkan background putih di gambar/gif transparan ===== */
